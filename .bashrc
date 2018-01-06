@@ -124,7 +124,7 @@ function my_watch()
 function create_profile_archive(){
     TMP_PROFILE_ARCHIVE="/tmp/${USER}.profile.tar.gz"
     cd ~
-    find .bashrc .pythonrc .vimrc .vim -not -name .netrwhist -not -path '.vim/plugged/*' -type f -print0 | xargs -r -0   tar -czvf $TMP_PROFILE_ARCHIVE
+    find .bashrc .pythonrc .vimrc .vim -not -name .netrwhist -not -path '.vim/plugged/*' -type f -print0 | xargs -r -0 tar -czvf $TMP_PROFILE_ARCHIVE
     cd - >/dev/null
     echo
     ls -lh $TMP_PROFILE_ARCHIVE

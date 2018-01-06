@@ -22,7 +22,6 @@ check_update_profile () {
 }
 
 type -p wget >/dev/null && \
-type -p nc >/dev/null && \
 type -p date >/dev/null && \
 type -p stat >/dev/null && \
 type -p echo >/dev/null && \
