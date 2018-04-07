@@ -161,7 +161,7 @@ complete -A job -P '%'     fg jobs disown
 complete -A directory  mkdir rmdir
 complete -A directory   -o default cd
 
-complete -W "$(ls /etc/init.d/)" service chkconfig
+complete -W "$(test -d /etc/init.d && ls /etc/init.d/)" service chkconfig
 
 # Archive
 complete -f -o default -X '*.+(zip|ZIP)'  zip
