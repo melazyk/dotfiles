@@ -72,12 +72,12 @@ function! StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 
-set pastetoggle=<F10>
+set pastetoggle=,p
 
-nmap <F2> :NERDTreeToggle<CR>
-nmap <F3> :TagbarToggle<CR>
-map <silent> <F4> :call StripTrailingWhitespaces()<CR>
-map <silent> <F12> :let &number=1-&number \| let &foldcolumn=&number<CR>
+nmap ,tree :NERDTreeToggle<CR>
+nmap ,tag :TagbarToggle<CR>
+map <silent> ,s :call StripTrailingWhitespaces()<CR>
+map <silent> ,n :let &number=1-&number \| let &foldcolumn=&number<CR>
 map <buffer> <C-p> :setlocal paste! paste?<cr>
 
 " Commenting blocks of code.
