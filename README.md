@@ -18,7 +18,7 @@ You should have a wget and bash.
     source <(wget -q -O-  https://raw.githubusercontent.com/melazyk/dotfiles/current/.bash_profile)
 
     # if you have a curl
-    source <(wget -q -O-  https://raw.githubusercontent.com/melazyk/dotfiles/current/.bash_profile)
+    source <(curl -s https://raw.githubusercontent.com/melazyk/dotfiles/current/.bash_profile)
 
     # then update profile ))
     update_profile
