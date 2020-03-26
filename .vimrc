@@ -30,6 +30,8 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'majutsushi/tagbar'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'dense-analysis/ale'
+Plug 'rodjek/vim-puppet'
 call plug#end()
 
 
